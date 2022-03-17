@@ -30,5 +30,17 @@ namespace MaximumGenerics
             else
                 Console.WriteLine($"Max value is: {num3}");
         }
+        /// <summary>
+        /// Finds Max of 3 strings
+        /// </summary>
+        public static void StringMax(string str1, string str2, string str3)
+        {
+            if (str1.CompareTo(str2) >= 0 && str1.CompareTo(str3) >= 0)
+                Console.WriteLine($"Max value is: {str1}");
+            else if (str2.CompareTo(str3) >= 0)
+                Console.WriteLine($"Max value is: {str2}");
+            else
+                Console.WriteLine($"Max value is: {str3}");
+        }
     }
 }
